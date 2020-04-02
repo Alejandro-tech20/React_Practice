@@ -1,0 +1,74 @@
+.subSubDiv2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+
+.subSubDiv2 .carousel {
+  border: solid 1px grey;
+  height: 120px;
+  width: 120px;
+  position: relative;
+}
+
+.subSubDiv2 .botones {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.subSubDiv2 .carousel_slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+}
+
+.subSubDiv2 .carousel_slide img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center center;
+     object-position: center center;
+}
+
+.subSubDiv2 .carousel_slide .img_active {
+  display: block;
+}
+
+.subSubDiv2 .carousel_slide .img_hidden {
+  display: none;
+}
+
+@supports ((-o-object-fit: cover) or (object-fit: cover)) {
+  .carousel_slide img {
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center center;
+       object-position: center center;
+  }
+}
+/*# sourceMappingURL=Carousel.css.map */

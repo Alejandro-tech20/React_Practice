@@ -1,0 +1,111 @@
+.board2 {
+  height: 120px;
+  width: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: solid #000 1px;
+  position: relative;
+  z-index: 1;
+}
+
+.board2 .div2 {
+  height: calc(100% / 3);
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.board2 .div2 .box {
+  border: solid 1px white;
+  height: 100%;
+  width: calc(100% / 3);
+  background-color: yellowgreen;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+}
+
+.board2 .div2 .box:hover {
+  -webkit-transform: translateY(-3px);
+          transform: translateY(-3px);
+  background-color: grey;
+}
+
+.box2 {
+  width: 70%;
+  height: 200px;
+  background: #FFF;
+  margin-top: 40px auto;
+}
+
+.box2 h3 {
+  text-align: center;
+  position: relative;
+  top: 80px;
+}
+
+.sombra {
+  position: relative;
+}
+
+.sombra::after, .sombra::before {
+  z-index: -1;
+  position: absolute;
+  content: "";
+  bottom: 25px;
+  left: 10px;
+  width: 50%;
+  top: 80%;
+  max-width: 300px;
+  background: #777;
+  -webkit-box-shadow: 0 35px 20px #777;
+  box-shadow: 0 35px 20px #777;
+  -webkit-transform: rotate(-8deg);
+  transform: rotate(-8deg);
+}
+
+.sombra::after {
+  -webkit-transform: rotate(8deg);
+  transform: rotate(8deg);
+  right: 10px;
+  left: auto;
+}
+
+.sombra2 {
+  position: relative;
+}
+
+.sombra2::after, .sombra2::before {
+  z-index: -1;
+  position: absolute;
+  content: "";
+  left: 40px;
+  width: 25px;
+  height: 50px;
+  top: 70%;
+  max-width: 300px;
+  background: #777;
+  -webkit-box-shadow: 0 35px 20px #777;
+  box-shadow: 10px 35px 20px #777;
+  -webkit-transform: rotate(78deg);
+  transform: rotate(90deg);
+}
+
+.sombra2::after {
+  -webkit-transform: rotate(-76deg);
+  transform: rotate(-88deg);
+  right: 18px;
+  left: auto;
+  -webkit-box-shadow: -10px 15px 20px #777;
+          box-shadow: -10px 15px 20px #777;
+}
+/*# sourceMappingURL=Game.css.map */

@@ -1,0 +1,82 @@
+.divRaiz {
+  height: 300px;
+  width: 100vw;
+  top: 500px;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  overflow: hidden;
+  z-index: -1;
+  background-color: grey;
+  overflow: hidden;
+}
+
+.icono {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 40px;
+  border: solid 1px blue;
+  height: 25px;
+  width: 80%;
+  text-transform: capitalize;
+}
+
+.icono .contenido {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 40%;
+}
+
+.icono .porciento {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 40%;
+}
+
+.icono button {
+  height: 20px;
+  width: 50px;
+  background-color: #425;
+  color: white;
+  border: solid 0.4px white;
+  border-radius: 1.5px;
+  border-style: outset;
+}
+
+.icono button .icono_cerrar {
+  cursor: pointer;
+}
+/*# sourceMappingURL=Tabla.css.map */

@@ -1,0 +1,135 @@
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.screen1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  overflow: hidden;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: -1;
+  height: 100vh;
+  width: 100%;
+  background-color: #E9E3E6;
+}
+
+.screen1 .child1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 35%;
+  width: 100%;
+}
+
+.screen1 .child1 .cub_child1 {
+  width: 100%;
+  height: 90%;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#858784), color-stop(#9e9d99), color-stop(#b8b3b1), color-stop(#d1cbcb), to(#e9e3e6));
+  background-image: linear-gradient(to right bottom, #858784, #9e9d99, #b8b3b1, #d1cbcb, #e9e3e6);
+  -webkit-clip-path: polygon(100% 0, 0 0, 0 100%);
+          clip-path: polygon(100% 0, 0 0, 0 100%);
+}
+
+.screen1 .child_2 {
+  height: 300px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  top: -100px;
+  width: 60%;
+  background-color: #1e1e1f;
+  -webkit-box-shadow: 10px 10px 65px 0px rgba(0, 0, 0, 0.75);
+          box-shadow: 10px 10px 65px 0px rgba(0, 0, 0, 0.75);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.screen1 .child_2 img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: auto;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center center;
+     object-position: center center;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+  opacity: 0.5;
+}
+
+.screen1 .child_2 h3 {
+  position: absolute;
+  top: 50px;
+  left: 12px;
+  color: white;
+  font-size: 1.5em;
+  text-align: start;
+  z-index: 3;
+}
+
+.screen1 .child_2 h4 {
+  position: absolute;
+  top: 150px;
+  left: 34px;
+  width: 300px;
+  color: white;
+  font-size: 0.5em;
+  text-align: start;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: normal;
+}
+
+.botones {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  top: 250px;
+  height: 25px;
+  width: 120px;
+  position: absolute;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.botones button {
+  width: calc(100%/2);
+  margin: 2px;
+  padding: 2px;
+  font-size: .5em;
+  text-align: center;
+  background-color: #b64c29;
+  color: wheat;
+  border: solid .2px red;
+}
+/*# sourceMappingURL=Screen1.css.map */
